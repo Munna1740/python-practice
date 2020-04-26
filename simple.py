@@ -1,6 +1,0 @@
-num1 = input("Enter the first value: ")
-num2 = input("Enter the second value: ")
-sum = float(num1) + float(num2)
-print(sum)
-div = float(num1)/ int(num2)
-print(div)

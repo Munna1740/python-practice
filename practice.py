@@ -166,7 +166,32 @@ inputList = input("Enter the list element: ")
 list = inputList.split()
 print(list)
 #--------------------------------End-----------------------
+
+#-------------------------------check how many number,text and word in any sentance-------------------------------
+
+numberOfWords = 0
+numberOfLetter = 0
+numberOfDigit = 0
+
+text = input("Enter the text of the number: ")
+
+for x in text:
+    x = x.lower()
+    if (x>='a' and x<='z'):
+        numberOfLetter = numberOfLetter+1
+
+    elif(x>='0' and x<='9'):
+        numberOfDigit = numberOfDigit+1
+
+    elif x == ' ':
+        numberOfWords=numberOfWords+1
+
+print("Number of letter is: ", numberOfLetter)
+print("Number of digit is: ", numberOfDigit)
+print("Number of words is :",numberOfWords+1)
+#----------------------------------------------------End---------------------------------------------------------
 '''
+
 
 
 
